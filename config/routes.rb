@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get 'messages/index'
   root to: "messages#index"
+  resources :users, only: [:edit, :update]
 end
